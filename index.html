@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Downloader</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background GIF -->
+    <div id="bg-gif"></div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>YouTube Downloader</h1>
+        <form id="download-form">
+            <input type="text" id="url" name="url" placeholder="Enter YouTube URL" required>
+            <select id="quality" name="quality">
+                <option value="144p">144p</option>
+                <option value="360p">360p</option>
+                <option value="720p">720p</option>
+                <option value="1080p">1080p</option>
+                <option value="4K">4K</option>
+            </select>
+            <button type="submit" class="button">
+                <span class="button-content">Download</span>
+            </button>
+        </form>
+
+        <!-- Progress Bar -->
+        <div id="progress-container">
+            <div id="progress-bar"><div></div></div>
+            <span id="progress-text">0%</span>
+        </div>
+
+        <!-- Contact Option -->
+        <div class="contact">
+            <p>For support, contact me on Telegram: <a href="https://t.me/GAMECHANGER17" target="_blank">@GAMECHANGER17</a></p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
